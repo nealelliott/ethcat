@@ -2,7 +2,7 @@
  * ethcat.c
  *
  *  Created on: Oct 18, 2016
- *      Author: s396454
+ *     
  */
 #include <stdio.h>
 #include <stdlib.h>
