@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-
+/* */
 #ifdef LINUX
 #include <sys/socket.h>
 #include <linux/if.h>
