@@ -29,7 +29,7 @@
 #define ETH_FRAME_LEN 1514
 #define ETH_HLEN 14
 #endif
-
+#ifdef WINDOWS
 struct ifmap
 {
 	unsigned long mem_start;
@@ -40,6 +40,8 @@ struct ifmap
 	unsigned char port;
 	/* 3 bytes spare */
 };
+#endif
+#ifdef WINDOWS
 struct ifreq
 {
 #define IFHWADDRLEN	6
@@ -64,6 +66,7 @@ struct ifreq
 		char *	ifru_data;
 	} ifr_ifru;
 };
+#endif
 
 
 
@@ -143,11 +146,13 @@ struct ifreq
 #define ETH_P_AF_IUCV   0xFBFB
 #define ETH_P_802_3_MIN 0x0600
 */
+#ifdef WINDOWS
 struct ethhdr {
 	unsigned char h_dest[ETH_ALEN];
 	unsigned char h_source[ETH_ALEN];
 	unsigned short h_proto;
 };
+#endif
 struct eth_frm {
 	struct
 	{
