@@ -4,6 +4,7 @@
  *  Created on: Oct 18, 2016
  *     
  */
+#include "config.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -331,10 +332,3 @@ int main(int argc, char *argv[])
 	 return 0;
 }
 /*free(eth.ifc);*/
-
-
-
-
-
-
-

@@ -1,5 +1,8 @@
 /* config.h.in.  Generated from configure.ac by autoheader.  */
 
+/* linux define */
+#undef LINUX
+
 /* Name of package */
 #undef PACKAGE
 
